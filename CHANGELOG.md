@@ -5,6 +5,15 @@
 
 ### 1.0.7 · Shape the signal
 
+**November 17 maintenance update · build 20261116.215342**
+
+- Faster timeline box selection: drag feedback stays local while the selection is committed on release, reducing inspector and FX redraws. Shift/Command selection remains supported.
+- Reduced reverse-decoding work during prepared-section rendering, with sparse-frame prefetch for fast reverse cuts. Improvements depend on source media and edit structure.
+- Preparation shows elapsed time and an estimated time remaining once enough progress is available. Final export pauses competing preview playback.
+- Reorder video layers without changing their track identities, clip assignments or masks.
+- Rotating Split now offers rhythmic position swaps: top/bottom, left/right, bottom/top and right/left. Footage stays upright unless optional quarter-turn rotation is enabled.
+- Expanding a sequencer lane repeats its existing step setup, including individual clip choices and settings, with independent step identities.
+
 Phosphor Studio, formerly known as **ABJEXT**, gains time and displacement maps, more deliberate print and CRT treatments, and a clearer path from experimentation to a finished edit.
 
 - **Time Map:** use brightness, patterns, a named video lane or an imported still to choose moments from recent footage. Smooth or stepped transitions, explicit cross-cut history, map inspection and history readiness. History is bounded per instance and fills during playback; seeking starts fresh.
