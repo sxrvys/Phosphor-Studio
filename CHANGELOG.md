@@ -5,6 +5,13 @@
 
 ### 1.0.7 · Shape the signal
 
+**November 18 beta · build 20261119.020744**
+
+- **Draw on Footage.** Paint and erase with per-stroke color and opacity. Add shapes, text, or pasted or imported images. Track a separate area of the shot to carry the artwork with it.
+- **Find Subjects.** Scan for people or foreground objects, select a numbered subject, and attach artwork or turn its silhouette into a mask. Give subjects in the same clip different FX. Saved attachments keep their tracking samples; each scan covers up to 30 seconds.
+- **Faster timeline editing.** Box-selection previews commit on release. A plain click switches clip selection, and a click in empty space clears it. Trim, roll, and rate stretch use cached geometry during the drag. The timeline adds proportional zoom, Fit Project, and Zoom to Selection.
+- **Project compatibility.** Tracked artwork and automatic subject attachments use project format 37. When a project needs a newer build, the app reports the required project format.
+
 **November 18 beta · build 20261119.001323**
 
 - **Paint a moving mask.** Brush or outline a subject. Track motion or follow its silhouette in either direction within a shot. Drag a drifted mask back into place to set a correction, then continue tracking. Transform masks on the canvas, add editable text, or extend a mask over a passage.
