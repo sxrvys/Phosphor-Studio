@@ -30,7 +30,11 @@ Build a layered sequence, give it clip pools and probability, add per-step effec
 
 ## New in 1.0.7: Shape the signal
 
-Paint with time and displacement maps. Refine phosphor glow, scanlines and three-ink print texture. Browse real rendered FX examples and ten curated starting looks, test audio mappings in isolation, and compare timeline experiments before keeping them. Clip-editor navigation, preparation controls and targeted updates make the workflow clearer and reduce redundant work. **[Read the full changes →](CHANGELOG.md#107--shape-the-signal)**
+- **Shape the picture.** Use Time Map and Displacement Map, refine phosphor glow and three-ink dither, or build up a return with Tape Loop and Analog Feedback. Browse rendered FX examples and ten curated starting looks.
+- **Give the picture a rhythm.** Trigger camera shake, zoom punches, and stutters by hand, on the beat, or from audio accents. Draw automation envelopes, choose new LFO shapes, and test audio mapping beside the parameter.
+- **Keep edits moving.** Compare timeline experiments, reorder video tracks, and switch split-screen positions rhythmically. Prepared sections reduce work on fast reverse cuts and show an estimated time remaining. Growing a sequencer lane repeats the existing setup.
+
+**[Read the full changes →](CHANGELOG.md#107--shape-the-signal)**
 
 ### Tracked artwork and subjects
 
