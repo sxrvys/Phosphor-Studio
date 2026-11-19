@@ -375,6 +375,37 @@ This is separate from **Prepare Clips**, which warms the upcoming sequencer voic
 
 Warp anchors appear as boundaries between editable, source-preserving sections. They are saved with the project. This changes playback speed; it does not synthesize new in-between frames.
 
+### Place individual edits on the beat
+
+Turn on **Snap to Beat** and choose a grid division. A green guide marks a valid clip move that lands on the grid. Hold Command while moving, or Option while trimming, to bypass snapping for that gesture. Option-drag on a clip body still duplicates the clip. The **Beat editing** menu steps the playhead to the previous or next grid line and can split selected video clips at the nearest grid line. A linked audio clip is detached when its video is split at a beat, preserving the audio timing and length.
+
+### Paint a moving mask
+
+Select a timeline video clip and choose **Masks → Paint Mask…**. For several cuts, select a passage with the Range tool and use **Add Mask → Paint Mask…** on the Masks lane. The scope menu shows the affected clip or track and can extend an existing clip mask to the work range.
+
+1. Scrub to a clear frame. **Brush** paints freehand, **Outline** fills a closed shape, and **Eraser** removes paint. **Composite** shows the unsaved result in the timeline. **Matte** shows coverage against black, and **Source** shows the clip.
+2. Choose what the paint does. **Reveal Lower Tracks** cuts a hole through the painted area. **Keep Painted Area** keeps the image in the paint. **Fill with Color**, **Fill from Layer**, and **Apply FX** give the region its own look.
+3. Use **Follow Motion** to track position and size, or **Follow Outline** to update a silhouette. For outline tracking, paint a small patch on the subject to tell Phosphor what to follow. Click **Track Forward** or **Track Backward**. Tracking stops at a cut or the next correction.
+4. If tracking drifts, scrub to the problem frame and use **Correct** to drag the mask back into place, or touch up the paint. That frame becomes a new tracking anchor. Use the markers below the scrubber to review corrections and tracked spans.
+5. Click **Save Mask**. Open the purple mask on the Masks lane to revise the paint, animation, or effects.
+
+Choose **Play Composite Loop** and a length in beats or seconds. The audition prepares frames and uses the timeline soundtrack when available. **Compare** bypasses the draft and **Solo Mask** hides the other masks for that preview. The editor keeps its own audition range.
+
+- **Stack effects.** Choose **Apply FX → FX Settings… → Edit FX Chain…**. Add effects and reorder the chain. Choose **Inside** or **Outside** for the primary chain, and use **Regions…** for a separate outside or edge chain.
+- **Animate the mask.** Use **Transform** to move, scale, or rotate the mask on the canvas. The time strip shows pose keys and lets you set Hold, Linear, or Ease In and Out for the segment leading to the next key.
+- **Mask with text.** Choose **Text**, click the canvas to place the box, then click inside to type. Drag its handles to place and size it. The text toolbar controls font, glyph fill or stroke, and spacing.
+- **Animate to music.** **Modulation…** maps reveal, feather, or FX amount. The readout shows the current driver and strength at the playhead.
+
+### Tape Loop and Analog Feedback
+
+**Tape Loop** lives in **FX Browser → Time & rhythm**. Pick a half-beat to four-beat loop. Start playback, then use **Capture** or choose On playback start, Audio accents, or Bass accents. **Overdub** blends fresh footage into the tape. **Freeze** pauses writes while the tape plays, and **Clear** empties it. Open **Shape the feedback return** for per-pass zoom, rotation, color loss, and smear. Record Capture and Clear in automation when you want those gestures to replay in a rendered movie.
+
+**Analog Feedback** lives in **Master FX → Main Delay**, in the Delay mode menu. It continuously recirculates an image delayed by 1–8 frames. Set **Input Send** for fresh picture, **Feedback Gain** for the strength of the recirculation, and **Return Mix** for how much arrives at the output. **Add to Feedback Loop** puts effects inside the circuit. Try a gentle return zoom and a small rotation first.
+
+To feed a painted subject into the circuit, open **Paint Mask → Apply FX → FX Settings…** and choose **Analog Feedback · Mask the Send**. **Edit Feedback Return…** opens its own return rack. The return can travel outside the original matte. Use the Composite loop to watch the trail build.
+
+Older painted-mask projects still open. Use this build or newer for projects saved with the new mask workspace and feedback controls.
+
 ### Turn sequencer cuts into warpable sections
 
 Use the sequencer's **Add to Timeline** to place your chosen result, then select the timeline video clips you want to join and press **⌘J**, or choose **Timeline → Bounce Selection…**. In the dialog, click **Join on Existing Lanes**.
