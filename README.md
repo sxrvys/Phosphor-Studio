@@ -18,7 +18,7 @@ The Octatrack comparison describes the approach: patterns, parameter locks, and 
 
 **Current release: 1.0.7 beta.** Developer ID signed and notarized by Apple. Built for Apple Silicon Macs running macOS 14 Sonoma or later. No account or separate development tools required.
 
-The November 17 maintenance build adds faster timeline box selection, reverse-render optimizations, render time estimates, video layer reordering, rhythmic split-screen position swaps and repeating step settings when expanding sequencer lanes.
+The November 18 beta adds painted and tracked masks, stackable regional FX, beat-synced Tape Loop, a continuous Analog Feedback circuit, and a clearer editing and performance workspace. [Read the changes](CHANGELOG.md#107--shape-the-signal).
 
 ## New to Phosphor Studio? Make your first video
 
