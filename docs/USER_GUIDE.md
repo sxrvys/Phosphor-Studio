@@ -396,6 +396,15 @@ Choose **Play Composite Loop** and a length in beats or seconds. The audition pr
 - **Mask with text.** Choose **Text**, click the canvas to place the box, then click inside to type. Drag its handles to place and size it. The text toolbar controls font, glyph fill or stroke, and spacing.
 - **Animate to music.** **Modulation…** maps reveal, feather, or FX amount. The readout shows the current driver and strength at the playhead.
 
+### Track artwork and multiple subjects
+
+1. Right-click a timeline clip and choose **Draw on Footage…** to add visible artwork. For a mask, select the clip and open **Masks → Paint Mask…**. **Add Artwork** or **Add to Mask** lets you place a rectangle, ellipse, or image. Transparent areas of a pasted PNG leave that part of a mask clear.
+2. To follow a specific feature, choose **Track Area**, drag a box around the feature, then click **Forward** or **Backward**. For automatic detection, choose **Find Subjects → People** or **Foreground Objects**, then click a numbered subject in the preview. Scrub to a frame where the subject is visible if its number is missing.
+3. Choose **Use Outline** in Paint Mask for a silhouette. Choose **Apply FX** to give it a treatment. In Draw on Footage, add your artwork, then choose **Attach Artwork** to follow the selected subject.
+4. Save the mask or artwork. Open a new mask or artwork item on the same clip for a different subject. The editor reuses the scan while you work on that shot.
+
+Automatic scans cover up to 30 seconds of a shot. A long disappearance creates a new track. Saved attachments play and export using their stored tracking data. Projects with tracked artwork or automatic subject attachments use format 37, supported by 1.0.7 build 20261119.020744 and newer.
+
 ### Tape Loop and Analog Feedback
 
 **Tape Loop** lives in **FX Browser → Time & rhythm**. Pick a half-beat to four-beat loop. Start playback, then use **Capture** or choose On playback start, Audio accents, or Bass accents. **Overdub** blends fresh footage into the tape. **Freeze** pauses writes while the tape plays, and **Clear** empties it. Open **Shape the feedback return** for per-pass zoom, rotation, color loss, and smear. Record Capture and Clear in automation when you want those gestures to replay in a rendered movie.
