@@ -5,6 +5,17 @@
 
 ### 1.0.7 · Shape the signal
 
+**November 18 beta · build 20261119.001323**
+
+- **Paint a moving mask.** Brush or outline a subject. Track motion or follow its silhouette in either direction within a shot. Drag a drifted mask back into place to set a correction, then continue tracking. Transform masks on the canvas, add editable text, or extend a mask over a passage.
+- **Build effects by region.** Stack FX inside a mask and give the outside or edge its own chain. Preview the unsaved composite, compare it with the draft bypassed, and loop the passage in beats or seconds.
+- **Analog Feedback.** Open Main Delay and choose Analog Feedback for a continuous 1–8-frame return. Use separate Input Send, Feedback Gain, and Return Mix controls. Add processors inside the loop so they affect each pass. With Mask the Send, the painted subject enters the circuit and its trail can travel beyond the matte.
+- **Tape Loop.** Capture a half-beat to four-beat phrase at playback start, manually, from MIDI, or from an audio accent. Overdub live footage, freeze writes, clear the tape, and accumulate rotation, zoom, color loss, or smear.
+- **A clearer editing workspace.** The inspector keeps the affected clip count and track visible, and shows mixed values where clips differ. Timeline move and trim guides show the snap that actually lands. Audition Selection is on the toolbar. The live mixer exposes channel mute, solo, FX state, and the momentary rewind pad.
+- **Audio mapping beside the parameter.** Open a mapped control to see its driver, input activity, sensitivity, range, and mapping target.
+
+Preview can still show isolated gaps on heavy projects and at loop boundaries. Feedback starts fresh on a seek. Use this build or newer to reopen projects saved with the new mask and feedback controls.
+
 **November 17 maintenance update · build 20261116.215342**
 
 - Faster timeline box selection: drag feedback stays local while the selection is committed on release, reducing inspector and FX redraws. Shift/Command selection remains supported.
