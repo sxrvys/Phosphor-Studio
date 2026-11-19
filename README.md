@@ -16,9 +16,9 @@ The Octatrack comparison describes the approach: patterns, parameter locks, and 
 
 **[Download Phosphor Studio](https://github.com/sxrvys/Phosphor-Studio/releases)** · **[Make your first video](docs/USER_GUIDE.md#start-here-your-first-video)** · **[User guide](docs/USER_GUIDE.md)** · **[Report an issue](https://github.com/sxrvys/Phosphor-Studio/issues)**
 
-**Current release: 1.0.7 beta.** Developer ID signed and notarized by Apple. Built for Apple Silicon Macs running macOS 14 Sonoma or later. No account or separate development tools required.
+**Current release: 1.0.7 beta, build 20261119.020744.** Developer ID signed and notarized by Apple. Built for Apple Silicon Macs running macOS 14 Sonoma or later. No account or separate development tools required.
 
-The November 18 beta adds painted and tracked masks, stackable regional FX, beat-synced Tape Loop, a continuous Analog Feedback circuit, and a clearer editing and performance workspace. [Read the changes](CHANGELOG.md#107--shape-the-signal).
+The November 18 beta adds tracked artwork and multi-subject masks, smoother timeline gestures, stackable regional FX, beat-synced Tape Loop, and continuous Analog Feedback. [Read the changes](CHANGELOG.md#107--shape-the-signal).
 
 ## New to Phosphor Studio? Make your first video
 
@@ -31,6 +31,16 @@ Build a layered sequence, give it clip pools and probability, add per-step effec
 ## New in 1.0.7: Shape the signal
 
 Paint with time and displacement maps. Refine phosphor glow, scanlines and three-ink print texture. Browse real rendered FX examples and ten curated starting looks, test audio mappings in isolation, and compare timeline experiments before keeping them. Clip-editor navigation, preparation controls and targeted updates make the workflow clearer and reduce redundant work. **[Read the full changes →](CHANGELOG.md#107--shape-the-signal)**
+
+### Tracked artwork and subjects
+
+Right-click a timeline clip and choose **Draw on Footage…**. Paint and erase directly on the shot, set brush color and opacity, or add text, shapes, and pasted or imported images. Use **Track Area** to follow a feature independently of where you place the artwork.
+
+Open **Find Subjects** in **Paint Mask** or **Draw on Footage**, choose **People** or **Foreground Objects**, and pick a numbered subject. **Use Outline** isolates its silhouette for masking or regional FX. **Attach Artwork** moves your drawing or image with the subject. Add a separate mask or artwork item to give another subject a different treatment. Each scan covers up to 30 seconds of a shot.
+
+**Timeline editing** has quicker box selection and clearer deselection. Trim, roll, and rate stretch preview while you drag and commit when you release. Use the proportional zoom slider, **Fit Project**, or **Zoom to Selection** beside the work-range controls.
+
+These additions require **1.0.7 build 20261119.020744 or newer**. Projects using tracked artwork or automatic subject attachments save as format 37 and require a compatible build to reopen. [See the workflow](docs/USER_GUIDE.md#track-artwork-and-multiple-subjects).
 
 **Updating from ABJEXT:** a migration release is available in ABJEXT’s existing **Settings → Updates** feed. Download its DMG, install **Phosphor Studio.app**, and confirm your projects open before removing the old ABJEXT app. Future updates come from this repository. Your original files remain in place. Preferences and preset libraries migrate; route external MIDI to the new Phosphor Studio port. The renamed optional AU is a new host component, so retain the previous AU for old sets or replace it manually.
 
